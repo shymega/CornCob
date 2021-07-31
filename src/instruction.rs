@@ -9,6 +9,7 @@ pub struct Instruction {
 
 impl Instruction {
     #[allow(dead_code)]
+    #[must_use]
     pub fn new(opcode: Opcode) -> Instruction {
         Instruction { opcode }
     }
