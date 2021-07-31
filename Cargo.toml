@@ -27,5 +27,5 @@ bench = false
 name = "corncob"
 
 [dependencies]
-nom = "6.1.2"
+nom = "6.2.1"
 clap = "2.33.3"
