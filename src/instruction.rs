@@ -1,3 +1,5 @@
+//! Bytecode instructions for CornCob VM.
+
 use super::opcode::Opcode;
 
 #[derive(Debug, PartialEq)]
