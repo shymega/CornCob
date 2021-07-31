@@ -17,7 +17,7 @@ impl Instruction {
 
 #[cfg(test)]
 mod tests {
-    use super::*;
+    use super::{Instruction, Opcode};
 
     #[test]
     fn test_hlt() {
