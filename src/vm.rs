@@ -1,3 +1,5 @@
+//! This is the core of the `CornCob` VM.
+
 #[derive(Debug, Default)]
 pub(crate) struct VM {
     registers: [i32; 32],
