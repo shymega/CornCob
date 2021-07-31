@@ -1,3 +1,4 @@
+//! This library is the entrypoint for the `CornCob` VM.
 #![deny(
     missing_copy_implementations,
     missing_debug_implementations,
