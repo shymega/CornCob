@@ -20,7 +20,7 @@ mod tests {
     use super::{Instruction, Opcode};
 
     #[test]
-    fn test_hlt() {
+    fn test_hlt_opcode() {
         let opcode = Opcode::HLT;
 
         assert_eq!(opcode, Opcode::HLT);
