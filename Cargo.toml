@@ -2,7 +2,7 @@
 name = "corncob"
 version = "0.1.0"
 authors = ["Dom Rodriguez <shymega@shymega.org.uk>"]
-edition = "2018"
+edition = "2021"
 categories = ["vm", "language", "cobol"]
 description = "Lightweight VM in Rust for the COBOL language"
 keywords = ["language", "COBOL", "virtual machine"]
@@ -27,5 +27,5 @@ bench = false
 name = "corncob"
 
 [dependencies]
-nom = "6.2.1"
-clap = "2.33.3"
+nom = "7.1.1"
+clap = "3.1.8"
