@@ -1,17 +1,16 @@
-use clap::{App, ArgMatches};
+use clap::{ArgMatches, Command};
 
-fn parse_arguments() -> ArgMatches<'static> {
-    App::new("corncobc")
+fn get_args() -> ArgMatches {
+    Command::new("corncobc")
         .version(env!("CARGO_PKG_VERSION"))
-        .author("The CornCob Developers")
-        .about(
-            "Program for compiling COBOL code for the CornCob virtual machine",
-        )
+        .author("Dom Rodriguez <shymega@shymega.org.uk>")
+        .about("COBOL compiler for the CornCob VM.")
         .get_matches()
+        .clone()
 }
 
 fn main() {
-    let _matches = parse_arguments();
+    let _matches = get_args();
 
-    unimplemented!();
+    todo!()
 }
