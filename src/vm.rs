@@ -12,7 +12,7 @@ impl VM {
     pub fn new() -> VM {
         VM {
             registers: [0; 32],
-            program: vec![],
+            program: Vec::new(),
             program_counter: 0,
         }
     }
