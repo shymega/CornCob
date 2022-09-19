@@ -27,5 +27,34 @@ bench = false
 name = "corncob"
 
 [dependencies]
-nom = "7.1.1"
-clap = "3.1.8"
+clap = "3.2.6"
+
+[profile.dev]
+opt-level = 3
+codegen-units = 1
+debug = true
+lto = true
+strip = false
+incremental = false
+
+[profile.dev.package."*"]
+opt-level = 3
+codegen-units = 1
+debug = true
+strip = false
+incremental = false
+
+[profile.release]
+opt-level = 'z'
+codegen-units = 1
+debug = true
+lto = true
+strip = true
+incremental = false
+
+[profile.release.package."*"]
+opt-level = 'z'
+codegen-units = 1
+debug = true
+strip = true
+incremental = false
