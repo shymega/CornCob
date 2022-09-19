@@ -1,5 +1,6 @@
 //! This library is the entrypoint for the `CornCob` VM.
 #![deny(
+    warnings,
     missing_copy_implementations,
     missing_debug_implementations,
     missing_docs,
@@ -14,7 +15,8 @@
     unused_extern_crates,
     variant_size_differences
 )]
+#![allow(dead_code)]
 
-pub(crate) mod instruction;
-pub(crate) mod opcode;
+pub mod instruction;
+pub mod opcode;
 pub mod vm;
