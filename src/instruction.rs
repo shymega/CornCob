@@ -1,4 +1,4 @@
-//! Bytecode instructions for CornCob VM.
+//! Bytecode instructions for `CornCob` VM.
 
 use super::opcode::Opcode;
 
@@ -8,10 +8,9 @@ pub struct Instruction {
 }
 
 impl Instruction {
-    #[allow(dead_code)]
     #[must_use]
-    pub fn new(opcode: Opcode) -> Instruction {
-        Instruction { opcode }
+    pub fn new(opcode: Opcode) -> Self {
+        Self { opcode }
     }
 }
 
