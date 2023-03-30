@@ -1,7 +1,9 @@
 //! This is the core of the `CornCob` VM.
 
 #[derive(Debug, Default)]
-pub(crate) struct VM {
+/// `VM` is a structure containing registers for the VM, the current program (in a `Vec<u8>`), and
+/// the current bytecode being executed.
+pub struct VM {
     registers: [i32; 32],
     program: Vec<u8>,
     program_counter: usize,
@@ -9,8 +11,9 @@ pub(crate) struct VM {
 
 impl VM {
     #[allow(dead_code)]
-    pub fn new() -> VM {
-        VM {
+    /// `VM::new()` returns a fresh `VM`.
+    pub fn new() -> Self {
+        Self {
             registers: [0; 32],
             program: Vec::new(),
             program_counter: 0,

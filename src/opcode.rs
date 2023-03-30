@@ -1,7 +1,8 @@
 //! Module of VM opcodes.
 
-#[derive(Debug, PartialEq, Copy, Clone)]
+#[derive(Debug, PartialEq, Eq, Copy, Clone)]
 #[allow(dead_code, clippy::upper_case_acronyms, non_camel_case_types)]
+/// `Opcode` is an enum defining different opcodes, with their bytecode identifier.
 pub enum Opcode {
     /// Halt virtual machine.
     HLT = 0x0,

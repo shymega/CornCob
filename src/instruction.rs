@@ -1,14 +1,17 @@
 //! Bytecode instructions for `CornCob` VM.
 
-use super::opcode::Opcode;
+use crate::opcode::Opcode;
 
-#[derive(Debug, PartialEq, Copy, Clone)]
+#[derive(Debug, PartialEq, Eq, Copy, Clone)]
+/// `Instruction` is a structure containing the selected `Opcode` enum variant, and arguments to
+/// that opcode.
 pub struct Instruction {
     opcode: Opcode,
 }
 
 impl Instruction {
     #[must_use]
+    /// `Instruction::new` initializes the Instruction struct.
     pub fn new(opcode: Opcode) -> Self {
         Self { opcode }
     }
@@ -16,7 +19,7 @@ impl Instruction {
 
 #[cfg(test)]
 mod tests {
-    use super::{Instruction, Opcode};
+    use crate::{instruction::Instruction, opcode::Opcode};
 
     #[test]
     fn test_hlt_opcode() {
