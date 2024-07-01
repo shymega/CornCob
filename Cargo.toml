@@ -27,7 +27,7 @@ bench = false
 name = "corncob"
 
 [dependencies]
-clap = "4.5.7"
+clap = "4.5.8"
 
 [profile.dev]
 opt-level = 3
